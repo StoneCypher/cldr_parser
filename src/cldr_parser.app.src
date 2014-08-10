@@ -1,15 +1,13 @@
 %% -*- mode: erlang -*-
-{application, example_project,
+{application, cldr_parser,
  [
-  {description, "Example Concrete generator project"},
+  {description, "Erlang parser for the Unicode CLDR (Common Locale Data Repository.)"},
   {vsn, "0.0.1"},
   {registered, []},
   {applications, [
                   kernel,
                   stdlib
                  ]},
-  %% uncomment if this is an active application
-  %% {mod, { example_project_app, []}},
   {env, []}
  ]}.
 %% vim: set filetype=erlang tabstop=2
