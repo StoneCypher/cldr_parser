@@ -1,17 +1,9 @@
-base_project
-============
+cldr_parser
+===========
 
-This is a checkout template for Erlang applications, with rebar and plt stuff in place already a la Concrete, and some other customizations, like having my name already in place and always needing `proper` and so on.
+Parse the [CLDR](http://cldr.unicode.org/) into something tolerable. Erlang tested; your mother approved.
 
-If this text is still here, then I haven't finished the update steps below yet after a checkout.
-
-To check out transparently over a repo, go into the base project directory and type `git checkout-index -a -f --prefix=/c/projects/reponame/`.  ***It is important to not lose the trailing slash.***
-
-1. Go fix the filename of the `.app.src` in source, and update the appname inside.
-1. Clear the whargarbls in this file
-1. Update any deps needed
 1. Compile and test before updating
-1. Write the descriptive text above
 1. Set the project name in the polemic at the end
 
 
@@ -26,13 +18,29 @@ tl;dr
 
 
 
+wat
+---
 
-Current Library Status: *Usable*
+The CLDR is the the [Unicode Common Locale Data Repository](http://cldr.unicode.org/).
+It's a set of rules regarding localization: how to write numbers, times, dates, names,
+calendar months, and so on.
+
+Getting localization right is surprisingly complicated.  The CLDR is a data driven
+attempt to document, in a machine parseable way, what all these various language and
+country pairs actually expect.
+
+Needless to say, it comes in its own unique several format set.  Nauseating.
+
+HERE BE THY RING OF DECODERING, SWINE.
+
+
+
+
+
+Current Library Status: *Not Usable*
 --------------------------------
 
-This library is considered to be (`whargarbl` ready | not ready and why)
-
-`whargarbl` Unit testing and stochastic testing and doc notes.
+This library is considered to be not yet ready; it is still under development.
 
 Improvements will be gladly accepted.
 
@@ -55,4 +63,4 @@ Copyright (c) 2014 John Haugeland.  All rights reserved.
 Polemic :neckbeard:
 -------------------
 
-`whargarbl` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
+`cldr_parser` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
